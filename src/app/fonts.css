@@ -73,6 +73,7 @@
   --mega-muted-color: #787878;
   --mega-divider: #e5e7eb;
   --mega-panel-gray: #f8f9fa;
+  --page-gutter: clamp(16px, 5vw, 48px);
 }
 
 @theme inline {

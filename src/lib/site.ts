@@ -16,3 +16,7 @@ export const NAV_ROUTES = [
   { path: "/contact-us", changeFrequency: "monthly" as const, priority: 0.8 },
   { path: "/investor-relations", changeFrequency: "weekly" as const, priority: 0.6 },
 ] as const;
+
+export const MAPS_SHARE_URL = "https://share.google/JVIZNW8H6Dh66Qc79";
+export const MAPS_EMBED_SRC =
+  "https://maps.google.com/maps?q=Everrise+Packaging+Industries&z=16&hl=en&ie=UTF8&output=embed";

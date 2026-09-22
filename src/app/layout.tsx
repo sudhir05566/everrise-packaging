@@ -59,6 +59,14 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: [
+      { url: "/everrise-logo.jpeg", type: "image/jpeg" },
+      { url: "/favicon.jpg", type: "image/jpeg" },
+    ],
+    shortcut: "/favicon.jpg",
+    apple: "/apple-touch-icon.jpg",
+  },
   alternates: {
     canonical: "/",
   },

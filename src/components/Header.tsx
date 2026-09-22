@@ -66,9 +66,9 @@ export default function Header() {
       <div className="contact-bar">
         <div className="header-container contact-inner">
           <div className="contact-details">
-            <a href="tel:+918882407794"><span className="contact-icon">☎</span> +91 88824 07794</a>
-            <a href="tel:+919990407775"><span className="contact-icon">☎</span> +91 99904 07775</a>
-            <a href="mailto:everrisepack@gmail.com"><span className="contact-icon mail-icon">✉</span> everrisepack@gmail.com</a>
+            <a className="contact-phone" href="tel:+918882407794"><span className="contact-icon">☎</span> +91 88824 07794</a>
+            <a className="contact-phone contact-phone-alt" href="tel:+919990407775"><span className="contact-icon">☎</span> +91 99904 07775</a>
+            <a className="contact-email" href="mailto:everrisepack@gmail.com"><span className="contact-icon mail-icon">✉</span> everrisepack@gmail.com</a>
           </div>
         </div>
       </div>
@@ -100,7 +100,11 @@ export default function Header() {
                 className={`nav-link product-trigger ${activeMenu === "products" ? "is-active" : ""}`}
                 type="button"
                 aria-expanded={activeMenu === "products"}
-                onClick={() => router.push("/products")}
+                onClick={() => {
+                  setMobileOpen(false);
+                  setActiveMenu(null);
+                  router.push("/products");
+                }}
               >
                 Products <Chevron up={activeMenu === "products"} />
               </button>
@@ -129,7 +133,11 @@ export default function Header() {
                 className={`nav-link product-trigger ${activeMenu === "industries" ? "is-active" : ""}`}
                 type="button"
                 aria-expanded={activeMenu === "industries"}
-                onClick={() => router.push("/industry")}
+                onClick={() => {
+                  setMobileOpen(false);
+                  setActiveMenu(null);
+                  router.push("/industry");
+                }}
               >
                 Industries <Chevron up={activeMenu === "industries"} />
               </button>
@@ -149,10 +157,10 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <Link className="nav-link" href="/investor-relations">Investors</Link>
-            <Link className="nav-link" href="/about-us">About</Link>
-            <Link className="nav-link" href="/contact-us">Contact Us</Link>
-            <Link className="stock-button" href="/#products">Shop Stock Pouches</Link>
+            <Link className="nav-link" href="/investor-relations" onClick={() => setMobileOpen(false)}>Investors</Link>
+            <Link className="nav-link" href="/about-us" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link className="nav-link" href="/contact-us" onClick={() => setMobileOpen(false)}>Contact Us</Link>
+            <Link className="stock-button" href="/#products" onClick={() => setMobileOpen(false)}>Shop Stock Pouches</Link>
           </nav>
         </div>
       </div>

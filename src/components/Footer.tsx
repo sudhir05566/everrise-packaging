@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MAPS_SHARE_URL } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
           <a href="tel:+918882407794">+91 88824 07794</a>
           <a href="tel:+919990407775">+91 99904 07775</a>
           <a href="mailto:everrisepack@gmail.com">everrisepack@gmail.com</a>
-          <span>D-1, Meerut Road Industrial Area Ghaziabad, Uttar Pradesh - 201001</span>
+          <a href={MAPS_SHARE_URL} target="_blank" rel="noopener noreferrer">D-1, Meerut Road Industrial Area Ghaziabad, Uttar Pradesh - 201001</a>
         </div>
         <div>
           <h3>Let&apos;s talk packaging</h3>

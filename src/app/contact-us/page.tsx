@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import QuoteForm from "@/components/QuoteForm";
+import { MAPS_EMBED_SRC, MAPS_SHARE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -34,7 +35,7 @@ const contactItems = [
   {
     title: "Address",
     description: "Sales / Admin Office, Everrise Packaging",
-    href: "https://maps.google.com/?q=D-1,+Meerut+Road+Industrial+Area,+Ghaziabad,+Uttar+Pradesh+201001",
+    href: MAPS_SHARE_URL,
     label: "D-1, Meerut Road Industrial Area, Ghaziabad, Uttar Pradesh 201001",
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6">
@@ -44,9 +45,6 @@ const contactItems = [
     ),
   },
 ] as const;
-
-const mapEmbedSrc =
-  "https://maps.google.com/maps?q=D-1%2C%20Meerut%20Road%20Industrial%20Area%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201001&t=&z=14&ie=UTF8&iwloc=&output=embed";
 
 export default function ContactPage() {
   return (
@@ -77,7 +75,7 @@ export default function ContactPage() {
         <section className="contact-map-section" aria-label="Office location map">
           <iframe
             title="Everrise Packaging office location"
-            src={mapEmbedSrc}
+            src={MAPS_EMBED_SRC}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
