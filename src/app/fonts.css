@@ -1,0 +1,101 @@
+/* Duropack-matching fonts: Satoshi, General Sans, Open Sauce Two */
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/CDEBEFT2R7XKNGXSBBLZGMY4MMHZG75P/HEVKDGQCYDZ7Z6CDVR2ZQGBCTUD6ZARH/BKWEE3VKGTFABE37K2DTH625VUSN2N35.woff2");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/NID3I7RITWZSKXRCJGOCMP5NOADJK6IG/2HLHGD7OBTWCOHW64YXOE5KFXHU4KJHM/ZHME2QIRFR7UPJ47NLY27RCAFY44CKZJ.woff2");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/NHPGVFYUXYXE33DZ75OIT4JFGHITX5PE/PSUTMASCDJTVPERDYJZPN23BVUFUCQIF/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/5ICO57VJIN252OT5L2KLEIPW754DTLAO/ZU64SLR2IEO66N27IVY5Z6JJJRTJECJK/TCTRLNEXANFIGSFCZTGQL7PZ5362GYK6.woff2");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "General Sans";
+  src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/3RZHWSNONLLWJK3RLPEKUZOMM56GO4LJ/BPDRY7AHVI3MCDXXVXTQQ76H3UXA63S3/SB2OEB6IKZPRR6JT4GFJ2TFT6HBB6AZN.woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("https://framerusercontent.com/assets/MuNMZGWeNhX5Gys174fgd0zrnbE.woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+:root {
+  --background: #f7f8f9;
+  --foreground: #10141d;
+  --blue: #164a9c;
+  --navy: #103c83;
+  --muted: #6d737d;
+  --font-body: var(--font-inter), "Inter", Arial, sans-serif;
+  --font-display: "Satoshi", var(--font-inter), sans-serif;
+  --font-accent: var(--font-be-vietnam-pro), "Be Vietnam Pro", sans-serif;
+  --font-general: "General Sans", var(--font-inter), sans-serif;
+  --font-sauce: "Open Sauce Two", var(--font-inter), sans-serif;
+  --font-code: var(--font-fragment-mono), "Fragment Mono", ui-monospace, monospace;
+  --nav-link-color: rgb(10, 37, 102);
+  --mega-title-color: rgb(10, 37, 102);
+  --mega-muted-color: #787878;
+  --mega-divider: #e5e7eb;
+  --mega-panel-gray: #f8f9fa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-code);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  margin: 0;
+  font-size: 12px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; font-family: inherit; }
